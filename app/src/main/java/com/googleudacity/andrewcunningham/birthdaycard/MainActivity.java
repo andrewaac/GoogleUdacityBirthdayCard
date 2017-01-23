@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private final String WHEN_CURRENT = "2017";
 
     // Strings
-    private String to = String.format("Happy Birthday %s!", TO);
-    private String from = String.format("From %s!", FROM);
-    private String whereOld = String.format("At the %s!", WHERE_OLD);
-    private String whereCurrent = String.format("At the %s!", WHERE_CURRENT);
+    private String to = String.format(getString(R.string.happy_birthday), TO);
+    private String from = String.format(getString(R.string.from), FROM);
+    private String whereOld = String.format(getString(R.string.at_the), WHERE_OLD);
+    private String whereCurrent = String.format(getString(R.string.at_the), WHERE_CURRENT);
 
     // Views
     private TextSwitcher toWhereTextSwitcher, fromWhenTextSwitcher;
